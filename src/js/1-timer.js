@@ -6,7 +6,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
-import errorIcon from '../img/icon.svg'
+import errorIcon from '../img/error.svg'
 
 
 const input = document.querySelector('#datetime-picker');
@@ -30,7 +30,8 @@ const options = {
     //опції після вказання дати
     const timeNow = Date.now();
     if (selectedDates[0] - timeNow < 0) {
-      btn.setAttribute("disabled", "");
+        btn.setAttribute("disabled", "");
+        btn.setAttribute("readonly")
       iziToast.show({
       backgroundColor: '#EF4040',
       message: 'Please choose a date in the future',
