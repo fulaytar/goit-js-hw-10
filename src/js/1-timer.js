@@ -31,7 +31,6 @@ const options = {
     const timeNow = Date.now();
     if (selectedDates[0] - timeNow < 0) {
         btn.setAttribute("disabled", "");
-        btn.setAttribute("readonly")
       iziToast.show({
       backgroundColor: '#EF4040',
       message: 'Please choose a date in the future',
