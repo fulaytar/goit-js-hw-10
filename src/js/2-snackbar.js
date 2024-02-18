@@ -18,7 +18,7 @@ const ratioRejected = document.querySelector('input[value="rejected"]')
 console.log(input, btnSubmit, ratioFulFilled, ratioRejected)
 
 //навішую подію
-btnSubmit.addEventListener('click', createNotification);
+//btnSubmit.addEventListener('click', createNotification);
 
 /* function createNotification(event) {
     event.preventDefault();
