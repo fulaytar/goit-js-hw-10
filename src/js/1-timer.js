@@ -7,7 +7,7 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 // Імпорт іконки
-import icon_error from "../img/icon.png"
+import icon_error from "../img/icon.svg"
 
 
 const input = document.querySelector('#datetime-picker');
