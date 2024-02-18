@@ -7,6 +7,7 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 import errorIcon from '../img/error.svg'
+import doneIcon from '../img/done.svg'
 
 
 const input = document.querySelector('#datetime-picker');
@@ -66,6 +67,14 @@ function setTimer() {
     userMinutes.textContent = addLeadingZero(convertTime.minutes);
     userSeconds.textContent = addLeadingZero(convertTime.seconds);
     if (convertTime.seconds < 1) {
+      iziToast.show({
+      backgroundColor: 'green',
+      message: "Time's up",
+      messageColor:'#FFFFFF',
+      position: 'topRight',
+      close: false,
+      iconUrl: doneIcon,
+      });
       clearInterval(calcTime);
     }
   }, 1000);
