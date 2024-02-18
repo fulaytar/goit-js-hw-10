@@ -31,12 +31,12 @@ const options = {
     if (selectedDates[0] - timeNow < 0) {
       btn.setAttribute("disabled", "");
       iziToast.show({
-    backgroundColor: '#EF4040',
+      backgroundColor: '#EF4040',
       message: 'Please choose a date in the future',
       messageColor:'#FFFFFF',
       position: 'topRight',
       close: false,
-      iconUrl:'../img/icon.svg',
+      iconUrl:'./img/icon.svg',
 });
     } else {
       btn.removeAttribute('disabled');
