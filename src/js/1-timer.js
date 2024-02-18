@@ -30,7 +30,7 @@ const options = {
     //опції після вказання дати
     const timeNow = Date.now();
     if (selectedDates[0] - timeNow < 0) {
-        btn.setAttribute("disabled", "");
+      btn.setAttribute("disabled", "");
       iziToast.show({
       backgroundColor: '#EF4040',
       message: 'Please choose a date in the future',
@@ -53,8 +53,11 @@ btn.addEventListener('click', setTimer);
 
 //подія на кнопці
 function setTimer() {
+  //вимикаю форму і кнопки
   btn.setAttribute("disabled", "");
+  input.setAttribute("disabled", "");
   calendar.destroy();
+  
   const calcTime = setInterval(() => {
     const timeMiliSecond = new Date(userSelectedDate) - new Date();
     const convertTime = convertMs(timeMiliSecond);
