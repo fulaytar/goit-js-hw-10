@@ -6,6 +6,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+import errorIcon from '../img/icon.svg'
 
 
 const input = document.querySelector('#datetime-picker');
@@ -36,7 +37,7 @@ const options = {
       messageColor:'#FFFFFF',
       position: 'topRight',
       close: false,
-      iconUrl:'./img/icon.svg',
+      iconUrl: errorIcon,
 });
     } else {
       btn.removeAttribute('disabled');
