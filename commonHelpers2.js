@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";import"./assets/vendor-77e16229.js";const t=document.querySelector('input[type="number"]'),e=document.querySelector('button[type="submit"]'),o=document.querySelector('input[value="fulfilled"]'),c=document.querySelector('input[value="rejected"]');console.log(t,e,o,c);e.addEventListener("click",createNotification);
+//# sourceMappingURL=commonHelpers2.js.map
