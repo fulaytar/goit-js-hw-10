@@ -21,3 +21,102 @@ a:hover {
     background: white;
     color: #0B63F6;
 }
+label{
+    color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+input[type="number"]{
+    display: block;
+    border-radius: 4px;
+    margin-top: 8px;
+    width: 360px;
+    height: 40px;
+    margin-bottom: 16px;
+    outline: none;
+    padding: 8px 16px;
+    color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    border: 1px solid rgb(128, 128, 128);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+fieldset{
+    width: 360px;
+    height: 78px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+fieldset>legend{
+    margin-left: 28px;
+    color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+fieldset:not(legend){
+    display: flex;
+    column-gap: 48px;
+    justify-content: center;
+    
+}
+label input[type="radio"]{
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+fieldset label{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    column-gap: 8px;
+    color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+button{
+    border-radius: 8px;
+    background: rgb(78, 117, 255);
+    padding: 8px 16px 8px 16px;
+    width: 360px;
+    height: 40px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+button:hover {
+    background: rgb(108, 140, 255);
+    color: rgb(255, 255, 255);
+}
+input:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+input:active {
+    border-color: rgb(78, 117, 255);
+    color: rgb(0, 0, 0);
+}
+fieldset:hover, fieldset:focus{
+    border: 1px solid rgb(0, 0, 0);
+}
